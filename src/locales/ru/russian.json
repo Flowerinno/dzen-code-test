@@ -8,5 +8,11 @@
 	},
 	"header": {
 		"search": "Поиск"
+	},
+	"income": {
+		"header": "Приходы",
+		"incomeGroups": {
+			"productsCount": "Продукта"
+		}
 	}
 }

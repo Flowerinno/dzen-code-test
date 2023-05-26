@@ -1,0 +1,24 @@
+.incomeGroups {
+	min-width: 30;
+
+	.incomeGroupsList {
+		display: flex;
+		flex-flow: column;
+		gap: 0.5rem;
+
+		.incomeGroupsListItem {
+			display: flex;
+			align-items: center;
+
+			font-weight: 500;
+			font-size: 18px;
+			width: 25rem;
+			height: 5rem;
+			border: 1px solid gray;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}

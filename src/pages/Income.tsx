@@ -1,7 +1,7 @@
-import React from "react";
+import IncomeComponent from "@components/layout/modules/Income/IncomeComponent";
 
 const Income = () => {
-	return <div>Income</div>;
+	return <IncomeComponent />;
 };
 
 export default Income;

@@ -1,6 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
+import productsReducer from "./slices/productsSlice";
+import groupsReducer from "./slices/groupsSlice";
 
-const rootReducer = {};
+const rootReducer = {
+	products: productsReducer,
+	groups: groupsReducer,
+};
 
 const store = configureStore({
 	reducer: rootReducer,

@@ -8,5 +8,11 @@
 	},
 	"header": {
 		"search": "Search"
+	},
+	"income": {
+		"header": "Incomes",
+		"incomeGroups": {
+			"productsCount": "Products"
+		}
 	}
 }
