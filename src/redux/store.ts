@@ -1,12 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
+import langReducer from "./slices/lang/langSlice";
 
-export const makeStore = () =>
-	configureStore({
-		reducer: {},
-		middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(),
-		devTools: process.env.NODE_ENV !== "production",
-	});
+const rootReducer = {
+	lang: langReducer,
+};
 
-export type AppStore = ReturnType<typeof makeStore>;
-export type RootState = ReturnType<AppStore["getState"]>;
-export type AppDispatch = AppStore["dispatch"];
+const store = configureStore({
+	reducer: rootReducer,
+});
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
+
+export default store;

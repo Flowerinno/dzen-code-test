@@ -8,6 +8,8 @@ module.exports = function override(config) {
 		"@redux": "src/redux",
 		"@assets": "src/assets",
 		"@sass": "src/sass",
+		"@hooks": "src/redux/hooks",
+		"@styles": "src/styles",
 	})(config);
 
 	return config;

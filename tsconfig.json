@@ -15,14 +15,17 @@
 		"isolatedModules": true,
 		"noEmit": true,
 		"jsx": "react-jsx",
-		"baseUrl": ".",
+		"baseUrl": "./",
 		"paths": {
 			"@components/*": ["./src/components/*"],
 			"@pages/*": ["./src/pages/*"],
 			"@utils/*": ["./src/utils/*"],
+			"@styles": ["./src/styles/global.scss"],
 			"@sass/*": ["./src/sass/*"],
-			"@redux/*": ["./src/redux/*"]
+			"@redux/*": ["./src/redux/*"],
+			"@hooks/*": ["./src/redux/hooks/*"],
+			"@layout/*": ["./src/components/layout/*"]
 		}
 	},
-	"include": ["src"]
+	"include": ["src", "config-overrides.js"]
 }

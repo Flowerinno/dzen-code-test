@@ -1,0 +1,45 @@
+@import "@sass/_colors.scss";
+
+.sidebarContainer {
+	display: flex;
+	flex-flow: column;
+	background-color: $sidebar-background;
+	height: 100%;
+	width: 15rem;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 3rem;
+	border-right: 1px solid black;
+
+	.sidebarAvatar {
+		position: relative;
+		margin-top: 4rem;
+
+		.settingsIcon {
+			height: 50px;
+			width: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			background-color: aliceblue;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			cursor: pointer;
+		}
+	}
+
+	.sidebarItem {
+		.itemLink {
+			text-decoration: none;
+			color: #000;
+			line-height: 1rem;
+			font-weight: 500;
+			font-size: 1rem;
+			&:hover {
+				border-bottom: 2px solid rgb(92, 199, 92);
+			}
+		}
+	}
+}
