@@ -10,6 +10,7 @@ module.exports = function override(config) {
 		"@sass": "src/sass",
 		"@hooks": "src/redux/hooks",
 		"@styles": "src/styles",
+		"@locales": "src/locales",
 	})(config);
 
 	return config;

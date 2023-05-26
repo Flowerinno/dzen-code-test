@@ -4,32 +4,37 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import { Link } from "react-router-dom";
 import Photo from "@assets/avatar.jpg";
 
+import { useTranslation } from "react-i18next";
+
 import styles from "./Sidebar.module.scss";
 
-const links = [
-	{
-		name: "ПРИХОДЫ",
-		link: "/",
-	},
-	{
-		name: "ГРУППЫ",
-		link: "/groups",
-	},
-	{
-		name: "ПРОДУКТЫ",
-		link: "/products",
-	},
-	{
-		name: "ПОЛЬЗОВАТЕЛИ",
-		link: "/users",
-	},
-	{
-		name: "НАСТРОЙКИ",
-		link: "/settings",
-	},
-];
-
 const Sidebar = () => {
+	
+	const { t } = useTranslation("sidebar");
+
+	const links = [
+		{
+			name: t("income"),
+			link: "/",
+		},
+		{
+			name: t("groups"),
+			link: "/groups",
+		},
+		{
+			name: t("products"),
+			link: "/products",
+		},
+		{
+			name: t("users"),
+			link: "/users",
+		},
+		{
+			name: t("settings"),
+			link: "/settings",
+		},
+	];
+
 	return (
 		<div className={styles.sidebarContainer}>
 			<div className={styles.sidebarAvatar}>

@@ -1,0 +1,12 @@
+{
+	"sidebar": {
+		"income": "INCOME",
+		"groups": "GROUPS",
+		"products": "PRODUCTS",
+		"users": "USERS",
+		"settings": "SETTINGS"
+	},
+	"header": {
+		"search": "Search"
+	}
+}

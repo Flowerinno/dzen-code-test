@@ -24,7 +24,8 @@
 			"@sass/*": ["./src/sass/*"],
 			"@redux/*": ["./src/redux/*"],
 			"@hooks/*": ["./src/redux/hooks/*"],
-			"@layout/*": ["./src/components/layout/*"]
+			"@layout/*": ["./src/components/layout/*"],
+			"@locales/*": ["./src/locales/*"]
 		}
 	},
 	"include": ["src", "config-overrides.js"]
