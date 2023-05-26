@@ -1,0 +1,15 @@
+.incomeListContainer {
+	flex: 1;
+	overflow: scroll;
+	.incomeList {
+		max-height: 20rem;
+		display: flex;
+		flex-flow: column;
+		gap: 0.5rem;
+
+		.incomeListItem {
+			height: 10rem;
+			border: 1px solid gray;
+		}
+	}
+}

@@ -1,7 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-	groups: ["Monitors", "Keyboards", "Mice", "Headsets"],
+	groups: [
+		{
+			type: "Monitors",
+		},
+		{
+			type: "Mouse",
+		},
+	],
 };
 
 const groupsSlice = createSlice({

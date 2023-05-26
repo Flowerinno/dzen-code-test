@@ -5,19 +5,43 @@
 		display: flex;
 		flex-flow: column;
 		gap: 0.5rem;
-
+		padding: 0.5rem;
+		
 		.incomeGroupsListItem {
 			display: flex;
 			align-items: center;
-
+			justify-content: space-between;
+			gap: 1rem;
 			font-weight: 500;
 			font-size: 18px;
 			width: 25rem;
 			height: 5rem;
 			border: 1px solid gray;
 
-			&:hover {
-				cursor: pointer;
+			.count {
+				text-align: center;
+				width: 1rem;
+				flex: 0.4;
+			}
+
+			.groupName {
+				text-decoration: underline;
+				margin-right: 1rem;
+				&:hover {
+					cursor: pointer;
+				}
+			}
+			.groupDate {
+				text-align: center;
+				flex: 0.3;
+			}
+			.arrow {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 2rem;
+				height: 100%;
+				background-color: #969696;
 			}
 		}
 	}

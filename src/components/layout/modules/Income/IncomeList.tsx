@@ -9,7 +9,17 @@ interface IncomeListProps {
 }
 
 const IncomeList: React.FC<IncomeListProps> = ({ products }) => {
-	return <div className={styles.incomeListContainer}>IncomeList</div>;
+	return (
+		<div className={styles.incomeListContainer}>
+			<ul className={styles.incomeList}>
+				{products.map((product) => (
+					<li className={styles.incomeListItem} key={product.id}>
+						<span>{product.title}</span>
+					</li>
+				))}
+			</ul>
+		</div>
+	);
 };
 
 export default IncomeList;

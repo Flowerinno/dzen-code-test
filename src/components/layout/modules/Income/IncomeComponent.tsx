@@ -13,7 +13,7 @@ interface IncomeComponentProps {}
 const IncomeComponent = () => {
 	const { t } = useTranslation("income");
 
-	const products = useAppSelector((state) => state.products);
+	const products = useAppSelector((state) => state.products.products);
 	const { groups } = useAppSelector((state) => state.groups);
 
 	return (
