@@ -1,7 +1,7 @@
 # Welcome to dzenCode 👋
 ![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000)
 
-> Invetory app dzenCode test
+> Inventory app for dzenCode test ;)
 
 ## Install
 

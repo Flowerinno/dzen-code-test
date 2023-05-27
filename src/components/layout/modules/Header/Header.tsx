@@ -27,7 +27,7 @@ const Header: React.FC<HeaderProps> = ({ language, languageHandler }) => {
 	const dispatch = useAppDispatch();	
 
 	const { date, time } = useFormattedDate();
-	console.log(time)
+
 	useEffect(() => {}, [language]);
 
 	const sidebarHandler = () => {

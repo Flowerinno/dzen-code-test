@@ -1,0 +1,10 @@
+.productsContainer {
+    display: flex;
+	flex-flow: column;
+	height: 100%;
+	width: 100%;
+	background-color: #e8eceb;
+	padding: 1rem;
+	overflow: scroll;
+	position: relative;
+}
