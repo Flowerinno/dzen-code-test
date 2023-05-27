@@ -1,5 +1,12 @@
 @import "@sass/_colors.scss";
 
+.sidebarMenu {
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 .sidebarContainer {
 	display: flex;
 	flex-flow: column;
@@ -8,8 +15,9 @@
 	min-width: 15rem;
 	align-items: center;
 	justify-content: flex-start;
-	gap: 3rem;
+	gap: 1.5rem;
 	border-right: 1px solid black;
+	position: relative;
 
 	.sidebarAvatar {
 		position: relative;

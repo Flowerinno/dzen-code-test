@@ -13,6 +13,9 @@
 		"header": "Incomes",
 		"incomeGroups": {
 			"productsCount": "Products"
+		},
+		"incomeProductsList": {
+			"noProducts": "No products for current group."
 		}
 	}
 }

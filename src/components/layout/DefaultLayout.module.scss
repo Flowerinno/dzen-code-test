@@ -1,10 +1,9 @@
-.container {
+.body {
 	display: flex;
-	flex-flow: column;
 	height: 100vh;
+}
 
-	.body {
-		display: flex;
-		height: 100%;
-	}
+.body > * {
+	height: 100%;
+	overflow-y: scroll;
 }

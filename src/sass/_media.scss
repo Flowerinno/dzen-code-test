@@ -23,7 +23,7 @@ $breakpoint-large-desktop: 1200px;
 }
 
 @mixin tablet {
-	@media screen and (min-width: $breakpoint-tablet) {
+	@media screen and (max-width: $breakpoint-tablet) {
 		@content;
 	}
 }
@@ -35,7 +35,7 @@ $breakpoint-large-desktop: 1200px;
 }
 
 @mixin desktop {
-	@media screen and (min-width: $breakpoint-desktop) {
+	@media screen and (max-width: $breakpoint-desktop) {
 		@content;
 	}
 }

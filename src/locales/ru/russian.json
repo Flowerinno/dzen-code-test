@@ -13,6 +13,9 @@
 		"header": "Приходы",
 		"incomeGroups": {
 			"productsCount": "Продукта"
+		},
+		"incomeProductsList": {
+			"noProducts": "Нет продукции в данной категории."
 		}
 	}
 }

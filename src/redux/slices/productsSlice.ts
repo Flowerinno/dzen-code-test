@@ -7,13 +7,13 @@ type ActiveProduct = "Monitors" | "Mouse";
 interface ProductsState {
 	products: ProductsI[];
 	activeType: ActiveProduct | null;
-	activeProduct: ProductsI[] | null;
+	activeProducts: ProductsI[] | null;
 }
 
 const initialState: ProductsState = {
 	products: data,
 	activeType: null,
-	activeProduct: null,
+	activeProducts: null,
 };
 
 const productsSlice = createSlice({
@@ -27,14 +27,15 @@ const productsSlice = createSlice({
 			state.products.filter((product) => product.id !== action.payload);
 		},
 		setActiveProduct: (state, action) => {
+			
 			state.activeType = action.payload;
-			state.activeProduct = state.products.filter(
+			state.activeProducts = state.products.filter(
 				(product) => product.type === action.payload
 			);
 		},
 		resetActive: (state) => {
 			state.activeType = null;
-			state.activeProduct = null;
+			state.activeProducts = null;
 		},
 	},
 });

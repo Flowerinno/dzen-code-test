@@ -2,9 +2,13 @@
 @import "@sass/_variables.scss";
 
 html,
-body {
+body,#root {
 	font-family: $primary-font, sans-serif;
 	overflow: hidden;
+	min-width: 100vw;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
 }
 
 *,

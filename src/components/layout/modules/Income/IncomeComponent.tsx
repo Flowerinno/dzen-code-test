@@ -13,7 +13,9 @@ interface IncomeComponentProps {}
 const IncomeComponent = () => {
 	const { t } = useTranslation("income");
 
-	const products = useAppSelector((state) => state.products.products);
+	const {products, activeType, activeProducts} = useAppSelector((state) => state.products);
+
+
 	const { groups } = useAppSelector((state) => state.groups);
 
 	return (
@@ -21,20 +23,21 @@ const IncomeComponent = () => {
 			<header>
 				<AddCircleTwoToneIcon
 					sx={{
-						width: 40,
-						height: 40,
-						backgroundColor: "green",
+						width: 30,
+						height: 30,
+						backgroundColor: "whitesmoke",
 						borderRadius: "50%",
-						color: "white",
+						color: "black",
 					}}
+					titleAccess="Add new group"
 				/>
 				<h1>
-					{t("header")} / {products?.length ?? 0}
+					{t("header")} / {products?.length}
 				</h1>
 			</header>
 			<div className={styles.incomeContent}>
-				<IncomeGroups groups={groups} productsCount={products.length ?? 0} />
-				<IncomeList products={products} />
+				<IncomeGroups groups={groups} productsCount={products.length ?? 0} activeType={activeType}/>
+				{activeType && <IncomeList products={activeProducts ?? products} />}
 			</div>
 		</div>
 	);
