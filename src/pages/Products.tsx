@@ -1,11 +1,8 @@
-
-
-
-import React from 'react'
+import ProductsComponent from '@components/layout/modules/Products/ProductsComponent'
 
 const Products = () => {
   return (
-    <div>Products</div>
+    <ProductsComponent />
   )
 }
 
