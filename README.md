@@ -16,7 +16,7 @@ npm run start
 ```
 
 ## Run tests
-
+ > All test are run using Jest and React testing library
 ```sh
 npm run test
 ```
