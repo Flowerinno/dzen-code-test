@@ -1,5 +1,6 @@
 {
   "name": "dzec-code",
+  "homepage": "https://Flowerinno/github.io/dzen-code-test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -31,7 +32,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "test": "react-app-rewired test --verbose=false",
+    "test": "npx jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
