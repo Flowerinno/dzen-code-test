@@ -39,7 +39,7 @@ const ProductsComponent = () => {
 			}
 			dispatch(setActiveProduct(type));
 		},
-		[dispatch, activeType]
+		[dispatch]
 	);
 
 	const selectHandler = (product: ProductsI) => {
