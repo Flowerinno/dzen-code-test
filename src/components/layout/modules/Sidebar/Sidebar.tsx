@@ -53,8 +53,9 @@ const Sidebar = () => {
 					<animated.div
 						className={styles.sidebarContainer}
 						style={{ ...style, backgroundColor: "#eff5f7" }}
+						
 					>
-						<div className={styles.sidebarAvatar}>
+						<div className={styles.sidebarAvatar} data-testid='sidebarContainer'>
 							<Avatar
 								alt="Aleksandr Kononov"
 								src={Photo}
