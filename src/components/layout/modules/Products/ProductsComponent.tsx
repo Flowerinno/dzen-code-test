@@ -1,6 +1,5 @@
 import { useEffect, useCallback } from "react";
 import { useAppSelector, useAppDispatch } from "@redux/hooks";
-import { useTranslation } from "react-i18next";
 
 import {
 	setActiveProduct,
@@ -40,7 +39,7 @@ const ProductsComponent = () => {
 			}
 			dispatch(setActiveProduct(type));
 		},
-		[activeType]
+		[dispatch, activeType]
 	);
 
 	const selectHandler = (product: ProductsI) => {
