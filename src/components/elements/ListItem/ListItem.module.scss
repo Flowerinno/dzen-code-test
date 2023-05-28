@@ -2,17 +2,30 @@
 
 .listItem {
 	display: flex;
+	flex-flow: row wrap;
 	align-items: center;
 	justify-content: flex-start;
+
 	gap: 1rem;
 	padding: 1rem;
 	min-height: 4rem;
 	border: 1px solid gray;
 
+	.isAvailable {
+		flex-basis: 10%;
+	}
+
+	.listItemPrice {
+		flex-basis: 7%;
+	}
+
+	.group {
+		flex-basis: 10%;
+		width: max-content;
+	}
 	.listItemInfo {
 		display: flex;
 		flex-flow: column wrap;
-		width: max-content;
 
 		& > h3 {
 			display: flex;

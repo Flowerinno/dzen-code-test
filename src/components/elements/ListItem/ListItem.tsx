@@ -40,7 +40,7 @@ const ListItem: React.FC<ListItemProps> = ({
 	const { t } = useTranslation("listItem");
 
 	if (!product) return null;
-	
+
 	return (
 		<div className={styles.listItem}>
 			<>
@@ -49,15 +49,18 @@ const ListItem: React.FC<ListItemProps> = ({
 				/>
 				<MonitorIcon sx={{ height: 45, width: 45, padding: 0, margin: 0 }} />
 			</>
-			<div className={styles.listItemInfo}>
+			<div
+				style={{ flexBasis: isFull ? "25%" : "55%" }}
+				className={styles.listItemInfo}
+			>
 				<h3>{product.title}</h3>
 				<p>{product.specification}</p>
 			</div>
-			<p style={{ color: availableColor }}>
+			<p className={styles.isAvailable} style={{ color: availableColor }}>
 				{product.isAvailable ? t("isAvailable") : t("notAvailable")}
 			</p>
 			{isFull && (
-				<div className="date">
+				<div className={styles.date}>
 					<p>{product.date}</p>
 				</div>
 			)}
@@ -72,7 +75,7 @@ const ListItem: React.FC<ListItemProps> = ({
 					</p>
 				</div>
 			)}
-			{isFull && <span>{product.group}</span>}
+			{isFull && <span className={styles.group}>{product.group}</span>}
 			{!isDialog && (
 				<DeleteIcon
 					sx={{ width: 40, fontSize: 20 }}

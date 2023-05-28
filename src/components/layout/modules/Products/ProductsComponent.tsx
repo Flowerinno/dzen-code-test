@@ -2,11 +2,16 @@ import { useEffect, useCallback } from "react";
 import { useAppSelector, useAppDispatch } from "@redux/hooks";
 import { useTranslation } from "react-i18next";
 
-import { setActiveProduct } from "@redux/slices/productsSlice";
-import { selectProduct } from "@redux/slices/productsSlice";
+import {
+	setActiveProduct,
+	selectProduct,
+	resetActive,
+} from "@redux/slices/productsSlice";
+
 import { openDialog } from "@redux/slices/dialogSlice";
 
 import ListItem from "@components/elements/ListItem/ListItem";
+import ProductsHeader from "./ProductsHeader";
 
 import styles from "./ProductsComponent.module.scss";
 
@@ -19,16 +24,20 @@ const ProductsComponent = () => {
 		(state) => state.products
 	);
 
-	const productType = activeType || "Monitors";
+	const existingTypes = ["Monitors", "Mouse"];
+
+	const productType = activeType || "All";
 
 	useEffect(() => {
-		selectType(productType);
-
 		return () => {};
 	}, [activeType]);
 
 	const selectType = useCallback(
 		(type: string): void => {
+			if (type === "All") {
+				dispatch(resetActive());
+				return;
+			}
 			dispatch(setActiveProduct(type));
 		},
 		[activeType]
@@ -41,17 +50,18 @@ const ProductsComponent = () => {
 		}
 	};
 
-	const { t } = useTranslation("products");
-
 	let list = activeProducts ? activeProducts : products;
+
+	let productsCount = list?.length || 0;
 
 	return (
 		<div className={styles.productsContainer}>
-			<header>
-				<h2>
-					{t("title")} / {activeProducts?.length}
-				</h2>
-			</header>
+			<ProductsHeader
+				count={productsCount}
+				activeType={productType}
+				types={existingTypes}
+				selectType={selectType}
+			/>
 			<div className={styles.productsBody}>
 				{list?.map((product) => {
 					return (

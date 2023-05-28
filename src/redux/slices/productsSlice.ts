@@ -38,7 +38,7 @@ const productsSlice = createSlice({
 		},
 		resetActive: (state) => {
 			state.activeType = null;
-			state.activeProducts = null;
+			state.activeProducts = state.products;
 		},
 		selectProduct: (state, action) => {
 			state.selectedProduct = action.payload;
