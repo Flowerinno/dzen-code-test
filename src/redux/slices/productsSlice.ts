@@ -8,12 +8,14 @@ interface ProductsState {
 	products: ProductsI[];
 	activeType: ActiveProduct | null;
 	activeProducts: ProductsI[] | null;
+	selectedProduct: ProductsI | null;
 }
 
 const initialState: ProductsState = {
 	products: data,
 	activeType: null,
 	activeProducts: null,
+	selectedProduct: null,
 };
 
 const productsSlice = createSlice({
@@ -24,10 +26,11 @@ const productsSlice = createSlice({
 			state.products.push(action.payload);
 		},
 		removeProduct: (state, action) => {
-			state.products.filter((product) => product.id !== action.payload);
+			state.products = state.products.filter(
+				(product) => product.id !== action.payload
+			);
 		},
 		setActiveProduct: (state, action) => {
-			
 			state.activeType = action.payload;
 			state.activeProducts = state.products.filter(
 				(product) => product.type === action.payload
@@ -37,10 +40,22 @@ const productsSlice = createSlice({
 			state.activeType = null;
 			state.activeProducts = null;
 		},
+		selectProduct: (state, action) => {
+			state.selectedProduct = action.payload;
+		},
+		resetProducts: (state) => {
+			state = initialState;
+		},
 	},
 });
 
-export const { addProduct, removeProduct, setActiveProduct, resetActive } =
-	productsSlice.actions;
+export const {
+	addProduct,
+	removeProduct,
+	setActiveProduct,
+	resetActive,
+	selectProduct,
+	resetProducts,
+} = productsSlice.actions;
 
 export default productsSlice.reducer;

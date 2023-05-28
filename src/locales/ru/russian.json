@@ -17,5 +17,24 @@
 		"incomeProductsList": {
 			"noProducts": "Нет продукции в данной категории."
 		}
+	},
+	"dialog": {
+		"firstSection": "Вы уверены, что хотите удалить этот приход?",
+		"buttons": {
+			"cancel": "ОТМЕНИТЬ",
+			"delete": "УДАЛИТЬ",
+			"add": "Добавить продукт"
+		}
+	},
+	"listItem": {
+		"isAvailable": "Свободен",
+		"notAvailable": "Занят",
+		"new": "Новый",
+		"notNew": "Б / У"
+	},
+	"products": {
+		"title": "Продукты",
+		"type": "Тип",
+		"specification": "Спецификация"
 	}
 }

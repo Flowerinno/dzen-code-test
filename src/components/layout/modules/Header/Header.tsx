@@ -4,11 +4,10 @@ import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
 import { TextField } from "@mui/material";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import Button from "@mui/material/Button";
-import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from "@mui/icons-material/Menu";
 
 import { useAppDispatch } from "@redux/hooks";
 import { setIsOpen } from "@redux/slices/sidebarSlice";
-
 
 import { useTranslation } from "react-i18next";
 
@@ -24,7 +23,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ language, languageHandler }) => {
 	const { t } = useTranslation("header");
 
-	const dispatch = useAppDispatch();	
+	const dispatch = useAppDispatch();
 
 	const { date, time } = useFormattedDate();
 
@@ -32,11 +31,15 @@ const Header: React.FC<HeaderProps> = ({ language, languageHandler }) => {
 
 	const sidebarHandler = () => {
 		dispatch(setIsOpen());
-	}
+	};
 
 	return (
 		<div className={styles.headerContainer}>
-			<MenuIcon className={styles.headerMenu} sx={{height: 40, width: 40}} onClick={sidebarHandler}/>
+			<MenuIcon
+				className={styles.headerMenu}
+				sx={{ height: 40, width: 40 }}
+				onClick={sidebarHandler}
+			/>
 			<div className={styles.headerLeft}>
 				<AdminPanelSettingsIcon sx={{ height: 60, width: 60 }} />
 				<TextField
@@ -52,7 +55,11 @@ const Header: React.FC<HeaderProps> = ({ language, languageHandler }) => {
 					<ScheduleIcon /> {time}
 				</p>
 			</div>
-			<Button onClick={() => languageHandler(language === "en" ? "ru" : "en")} className={styles.headerLanguage}>
+			<Button
+				size="small"
+				onClick={() => languageHandler(language === "en" ? "ru" : "en")}
+				className={styles.headerLanguage}
+			>
 				{language}
 			</Button>
 		</div>

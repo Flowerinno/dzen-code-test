@@ -6,6 +6,7 @@ export const data = [
 		title: "Gigabyte GeForce GTX 1080 Ti Gaming OC 11G",
 		type: "Monitors",
 		specification: "Specification 1",
+		isAvailable: true,
 		guarantee: {
 			start: "2017-06-29 12:09:33",
 			end: "2017-06-29 12:09:33",
@@ -25,6 +26,7 @@ export const data = [
 		title: "Gigabyte GeForce GTX 1080 Ti Gaming OC 11G",
 		type: "Monitors",
 		specification: "Specification 1",
+		isAvailable: true,
 		guarantee: {
 			start: "2017-06-29 12:09:33",
 			end: "2017-06-29 12:09:33",
@@ -44,6 +46,7 @@ export const data = [
 		title: "Gigabyte GeForce GTX 1080 Ti Gaming OC 11G",
 		type: "Monitors",
 		specification: "Specification 1",
+		isAvailable: true,
 		guarantee: {
 			start: "2017-06-29 12:09:33",
 			end: "2017-06-29 12:09:33",
@@ -61,8 +64,9 @@ export const data = [
 		serialNumber: 1234,
 		isNew: false,
 		title: "Gigabyte GeForce GTX 1080 Ti Gaming OC 11G",
-		type: "Monitors",
+		type: "Mouse",
 		specification: "Specification 1",
+		isAvailable: true,
 		guarantee: {
 			start: "2017-06-29 12:09:33",
 			end: "2017-06-29 12:09:33",
@@ -80,8 +84,9 @@ export const data = [
 		serialNumber: 1234,
 		isNew: false,
 		title: "Gigabyte GeForce GTX 1080 Ti Gaming OC 11G",
-		type: "Monitors",
+		type: "Mouse",
 		specification: "Specification 1",
+		isAvailable: false,
 		guarantee: {
 			start: "2017-06-29 12:09:33",
 			end: "2017-06-29 12:09:33",
@@ -101,6 +106,7 @@ export const data = [
 		title: "Gigabyte GeForce GTX 1080 Ti Gaming OC 11G",
 		type: "Monitors",
 		specification: "Specification 1",
+		isAvailable: false,
 		guarantee: {
 			start: "2017-06-29 12:09:33",
 			end: "2017-06-29 12:09:33",
@@ -118,8 +124,9 @@ export const data = [
 		serialNumber: 1234,
 		isNew: false,
 		title: "Gigabyte GeForce GTX 1080 Ti Gaming OC 11G",
-		type: "Monitors",
+		type: "Mouse",
 		specification: "Specification 1",
+		isAvailable: false,
 		guarantee: {
 			start: "2017-06-29 12:09:33",
 			end: "2017-06-29 12:09:33",
@@ -139,6 +146,7 @@ export const data = [
 		title: "Gigabyte GeForce GTX 1080 Ti Gaming OC 11G",
 		type: "Monitors",
 		specification: "Specification 1",
+		isAvailable: false,
 		guarantee: {
 			start: "2017-06-29 12:09:33",
 			end: "2017-06-29 12:09:33",

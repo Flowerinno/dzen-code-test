@@ -1,0 +1,45 @@
+@import "@sass/_media.scss";
+
+.listItem {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1rem;
+	padding: 1rem;
+	min-height: 4rem;
+	border: 1px solid gray;
+
+	.listItemInfo {
+		display: flex;
+		flex-flow: column wrap;
+		width: max-content;
+
+		& > h3 {
+			display: flex;
+			flex-flow: row wrap;
+			font-size: 1rem;
+			font-weight: 500;
+		}
+	}
+
+	.deleteIcon {
+		justify-self: flex-end;
+		flex: 0.3;
+
+		&:hover {
+			cursor: pointer;
+			scale: 1.2;
+		}
+	}
+
+	@include desktop {
+		& > * {
+			font-size: 12px;
+		}
+		.listItemInfo {
+			& > h3 {
+				font-size: 0.8rem;
+			}
+		}
+	}
+}

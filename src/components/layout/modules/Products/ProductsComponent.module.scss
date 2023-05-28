@@ -1,10 +1,27 @@
+@import "@sass/_media.scss";
+
 .productsContainer {
-    display: flex;
-	flex-flow: column;
-	height: 100%;
 	width: 100%;
+	display: flex;
+	flex-flow: column;
+	align-items: flex-start;
+	margin-top: 2rem;
 	background-color: #e8eceb;
 	padding: 1rem;
-	overflow: scroll;
+	overflow-x: hidden;
 	position: relative;
+
+	& > header {
+		display: flex;
+	}
+
+	.productsBody {
+		width: 100%;
+		display: flex;
+		flex-flow: column;
+		gap: 0.5rem;
+	}
+
+	@include desktop {
+	}
 }

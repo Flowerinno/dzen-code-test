@@ -5,6 +5,7 @@ export interface ProductsI {
 	title: string;
 	type: string;
 	specification: string;
+	isAvailable: boolean;
 	guarantee: {
 		start: string;
 		end: string;
@@ -18,4 +19,3 @@ export interface ProductsI {
 	group: string;
 	date: string;
 }
-

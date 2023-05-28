@@ -17,5 +17,24 @@
 		"incomeProductsList": {
 			"noProducts": "No products for current group."
 		}
+	},
+	"dialog": {
+		"firstSection": "Are you sure you want to delete this income?",
+		"buttons": {
+			"cancel": "Cancel",
+			"delete": "Delete",
+			"add": "Add product"
+		}
+	},
+	"listItem": {
+		"isAvailable": "Available",
+		"notAvailable": "Not available",
+		"new": "Новый",
+		"notNew": "Б / У"
+	},
+	"products": {
+		"title": "Products",
+		"type": "Type",
+		"specification": "Specification"
 	}
 }

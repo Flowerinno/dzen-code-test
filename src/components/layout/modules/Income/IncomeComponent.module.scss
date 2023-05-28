@@ -31,22 +31,20 @@
 		margin-top: 2rem;
 		display: flex;
 		align-items: flex-start;
-		justify-content:center;
+		justify-content: center;
 		gap: 2rem;
 	}
 
-	@include desktop{
+	@include desktop {
 		& > header {
-			top: 2%;
 			left: 5%;
 		}
 
 		.incomeContent {
-			flex-flow:column;
+			flex-flow: column;
 			align-items: center;
 			justify-content: center;
 			max-width: 100%;
 		}
 	}
-
 }
