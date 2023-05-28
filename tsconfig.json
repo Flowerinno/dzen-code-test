@@ -1,4 +1,4 @@
-{ 
+{
 	"compilerOptions": {
 		"target": "es5",
 		"lib": ["dom", "dom.iterable", "esnext"],
@@ -17,6 +17,7 @@
 		"jsx": "react-jsx",
 		"baseUrl": "./",
 		"paths": {
+			"@": ["./src/*"],
 			"@components/*": ["./src/components/*"],
 			"@pages/*": ["./src/pages/*"],
 			"@utils/*": ["./src/utils/*"],
