@@ -25,7 +25,14 @@ const Products = () => {
 			{transitions(
 				(style, item) =>
 					item && (
-						<animated.div style={{ ...style, backgroundColor: "#e8eceb", width:"100%" }}>
+						<animated.div
+							style={{
+								...style,
+								backgroundColor: "#e8eceb",
+								width: "100%",
+								height: "100%",
+							}}
+						>
 							<ProductsComponent />
 						</animated.div>
 					)

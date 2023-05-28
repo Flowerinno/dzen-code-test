@@ -34,7 +34,7 @@ const ProductsHeader: React.FC<ProductsHeaderProps> = ({
 			</h2>
 			<div className={styles.form}>
 				<span>{t("type")}:</span>
-				<FormControl>
+				<FormControl sx={{ m: 1, minWidth: 200 }} size="small">
 					<Select value={activeType} onChange={handleChange}>
 						<MenuItem value="All">
 							<em>All</em>
@@ -49,9 +49,11 @@ const ProductsHeader: React.FC<ProductsHeaderProps> = ({
 					</Select>
 				</FormControl>
 			</div>
-			<div>
+			<div className={styles.form}>
 				<span>{t("specification")}:</span>
-				<Select />
+				<FormControl sx={{ m: 1, width: 200 }} size="small">
+					<Select />
+				</FormControl>
 			</div>
 		</header>
 	);

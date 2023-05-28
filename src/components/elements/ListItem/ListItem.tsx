@@ -76,6 +76,7 @@ const ListItem: React.FC<ListItemProps> = ({
 				</div>
 			)}
 			{isFull && <span className={styles.group}>{product.group}</span>}
+			{isFull && <span className={styles.groupDate}>2017/06/29</span>}
 			{!isDialog && (
 				<DeleteIcon
 					sx={{ width: 40, fontSize: 20 }}

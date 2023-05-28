@@ -1,9 +1,8 @@
-.body {
-	display: flex;
-	height: 100vh;
-}
+.container {
 
-.body > * {
-	height: 100%;
-	overflow: hidden;
+
+	.body {
+		display: flex;
+		height: 100vh;
+	}
 }
