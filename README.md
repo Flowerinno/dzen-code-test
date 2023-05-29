@@ -25,7 +25,7 @@ npm run test
 > All instructions of image build are listed in Dockerfile 
 ```sh
 docker build -t my-test:latest .                   //build an image called my-test
-docker run -d -p 3000:3000 my-test:latest          // run container then visit port :3000
+docker run -d -p 3000:3000 my-test:latest          //run container then visit port :3000
 ```
 
 ## Author
