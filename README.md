@@ -18,7 +18,7 @@ npm run start
 ## Run tests
  > All test are run using Jest and React testing library
 ```sh
-npm run test
+npm run test   //press `a` to run all tests
 ```
 
 ## Dockerizing
