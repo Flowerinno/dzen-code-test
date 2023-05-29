@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/github.io/dzen-code-test/static/css/main.f975afb6.css",
+    "main.js": "/github.io/dzen-code-test/static/js/main.ec32c922.js",
+    "static/js/787.1c887907.chunk.js": "/github.io/dzen-code-test/static/js/787.1c887907.chunk.js",
+    "static/media/avatar.jpg": "/github.io/dzen-code-test/static/media/avatar.1d3832e42847523c1581.jpg",
+    "index.html": "/github.io/dzen-code-test/index.html",
+    "main.f975afb6.css.map": "/github.io/dzen-code-test/static/css/main.f975afb6.css.map",
+    "main.ec32c922.js.map": "/github.io/dzen-code-test/static/js/main.ec32c922.js.map",
+    "787.1c887907.chunk.js.map": "/github.io/dzen-code-test/static/js/787.1c887907.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f975afb6.css",
+    "static/js/main.ec32c922.js"
+  ]
+}
