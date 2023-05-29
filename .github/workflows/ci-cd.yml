@@ -23,11 +23,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # - name: Run tests
+      # - name: Run test
       #   run: npm test
   
   deploy_to_github_pages:
-    needs: build_and_test
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
