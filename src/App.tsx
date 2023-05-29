@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
-import Income from "@pages/Income";
-import Groups from "@pages/Groups";
-import Products from "@pages/Products";
-import Users from "@pages/Users";
-import Settings from "@pages/Settings";
-import DefaultLayout from "@components/layout/DefaultLayout";
-import Dialog from "@components/elements/Dialog/Dialog";
+import Income from "./pages/Income";
+import Groups from "./pages/Groups";
+import Products from "./pages/Products";
+import Users from "./pages/Users";
+import Settings from "./pages/Settings";
+import DefaultLayout from "./components/layout/DefaultLayout";
+import Dialog from "./components/elements/Dialog/Dialog";
 
 function App() {
 	return (

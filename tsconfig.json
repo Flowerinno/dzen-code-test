@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"types": ["@types/jest", "@testing-library/jest-dom"],
+		"types": ["@types/jest", "@testing-library/jest-dom", "jest"],
 		"target": "es5",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
@@ -10,26 +10,26 @@
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
 		"noFallthroughCasesInSwitch": true,
-		"module": "esnext",
+		"module": "commonjs",
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"noEmit": true,
 		"jsx": "react-jsx",
-		"baseUrl": "./",
+		"baseUrl": "./src",
 		"paths": {
-			"@": ["./src/*"],
-			"@components/*": ["./src/components/*"],
-			"@pages/*": ["./src/pages/*"],
-			"@utils/*": ["./src/utils/*"],
-			"@styles": ["./src/styles/global.scss"],
-			"@sass/*": ["./src/sass/*"],
-			"@redux/*": ["./src/redux/*"],
-			"@hooks/*": ["./src/redux/hooks/*"],
-			"@layout/*": ["./src/components/layout/*"],
-			"@locales/*": ["./src/locales/*"]
+			"@/*": ["./*"],
+			"@components/*": ["./components/*"],
+			"@pages/*": ["./pages/*"],
+			"@utils/*": ["./utils/*"],
+			"@styles": ["./styles/global.scss"],
+			"@sass/*": ["./sass/*"],
+			"@redux/*": ["./redux/*"],
+			"@hooks/*": ["./redux/hooks/*"],
+			"@layout/*": ["./components/layout/*"],
+			"@locales/*": ["./locales/*"]
 		}
 	},
-	"include": [".","src", "config-overrides.js"],
-	"exclude": ["node_modules"]
+	"include": [".", "src", "config-overrides.js"],
+	"exclude": ["node_modules", "**/*.test.*", "**/__mocks__/*", "**/__tests__/*"]
 }

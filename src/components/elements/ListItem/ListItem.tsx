@@ -82,6 +82,7 @@ const ListItem: React.FC<ListItemProps> = ({
 					sx={{ width: 40, fontSize: 20 }}
 					className={styles.deleteIcon}
 					onClick={() => selectHandler(product)}
+					data-testid="deleteIcon"
 				/>
 			)}
 		</div>

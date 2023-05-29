@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { data } from "src/data";
+import { data } from "@/data";
 import { ProductsI } from "@redux/types/productsTypes";
 
 type ActiveProduct = "Monitors" | "Mouse";

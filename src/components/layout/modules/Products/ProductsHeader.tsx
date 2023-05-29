@@ -29,13 +29,17 @@ const ProductsHeader: React.FC<ProductsHeaderProps> = ({
 
 	return (
 		<header className={styles.productsHeader}>
-			<h2>
+			<h2 data-testid="title">
 				{t("title")} / {count}
 			</h2>
 			<div className={styles.form}>
 				<span>{t("type")}:</span>
 				<FormControl sx={{ m: 1, minWidth: 200 }} size="small">
-					<Select value={activeType} onChange={handleChange}>
+					<Select
+						value={activeType}
+						onChange={handleChange}
+						data-testid="select"
+					>
 						<MenuItem value="All">
 							<em>All</em>
 						</MenuItem>
