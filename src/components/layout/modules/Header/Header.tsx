@@ -34,7 +34,7 @@ const Header: React.FC<HeaderProps> = ({ language, languageHandler }) => {
 	};
 
 	return (
-		<div className={styles.headerContainer}>
+		<div className={styles.headerContainer} data-testid='headerContainer'>
 			<MenuIcon
 				className={styles.headerMenu}
 				sx={{ height: 40, width: 40 }}
@@ -57,6 +57,7 @@ const Header: React.FC<HeaderProps> = ({ language, languageHandler }) => {
 			</div>
 			<Button
 				size="small"
+				data-testid='headerChangeLanguageButton'
 				onClick={() => languageHandler(language === "en" ? "ru" : "en")}
 				className={styles.headerLanguage}
 			>

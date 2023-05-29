@@ -21,7 +21,7 @@ export default function CustomizedDialogs() {
 	const product = useAppSelector((state) => state.products.selectedProduct);
 
 	const selectProductHandler = (product: ProductsI) => {
-		console.log(product);
+		// console.log(product);
 	};
 
 	const dispatch = useAppDispatch();
@@ -42,6 +42,7 @@ export default function CustomizedDialogs() {
 				fullWidth
 				onClose={handleClose}
 				open={isOpen}
+				data-testid='dialogTitle'
 			>
 				<DialogTitle>{t("firstSection")}</DialogTitle>
 				<DialogContent dividers>
@@ -54,13 +55,14 @@ export default function CustomizedDialogs() {
 					</Typography>
 				</DialogContent>
 				<DialogActions sx={{ backgroundColor: "green" }}>
-					<Button sx={{ color: "white" }} autoFocus onClick={handleClose}>
+					<Button data-testid='cancelButton' sx={{ color: "white" }} autoFocus onClick={handleClose}>
 						{t("buttons.cancel")}
 					</Button>
 					<Button
 						sx={{ color: "red", backgroundColor: "white" }}
 						autoFocus
 						onClick={handleClose}
+						data-testid='deleteButton'
 					>
 						{t("buttons.delete")}
 					</Button>
